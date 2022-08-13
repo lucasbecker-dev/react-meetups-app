@@ -10,13 +10,13 @@ const App = () => {
   return (
     <Layout>
       <Switch>
-        <Route path='/' exact>
+        <Route path={['/', '', '/react-meetups-app/']} exact>
           <AllMeetupsPage />
         </Route>
-        <Route path='/new-meetups'>
+        <Route path='/react-meetups-app/new-meetups'>
           <NewMeetupsPage />
         </Route>
-        <Route path='/favorites'>
+        <Route path='/react-meetups-app/favorites'>
           <FavoritesPage />
         </Route>
       </Switch>

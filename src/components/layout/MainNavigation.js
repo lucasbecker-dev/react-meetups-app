@@ -14,13 +14,13 @@ const MainNavigation = (props) => {
       </form>
       <ul>
         <li>
-          <Link to='/'>All Meetups</Link>
+          <Link to='/react-meetups-app/'>All Meetups</Link>
         </li>
         <li>
-          <Link to='/new-meetups'>New Meetups</Link>
+          <Link to='/react-meetups-app/new-meetups'>New Meetups</Link>
         </li>
         <li>
-          <Link to='/favorites'>
+          <Link to='/react-meetups-app/favorites'>
             Favorites
             <span className={classes.badge}>
               {favoritesContext.totalFavorites}
