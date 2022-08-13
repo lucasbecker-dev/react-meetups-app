@@ -1,6 +1,6 @@
-import { useRef } from "react";
-import classes from "./NewMeetupForm.module.css";
-import Card from "../ui/Card";
+import React, { useRef } from 'react';
+import classes from './NewMeetupForm.module.css';
+import Card from '../ui/Card';
 
 const NewMeetupForm = (props) => {
   const titleInputRef = useRef();
@@ -30,30 +30,28 @@ const NewMeetupForm = (props) => {
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
-          <label htmlFor="title">Meetup Title</label>
-          <input type="text" required id="title" ref={titleInputRef}></input>
+          <label htmlFor='title'>Meetup Title</label>
+          <input type='text' required id='title' ref={titleInputRef}></input>
         </div>
         <div className={classes.control}>
-          <label htmlFor="image">Meetup Image</label>
-          <input type="url" required id="image" ref={imageInputRef}></input>
+          <label htmlFor='image'>Meetup Image</label>
+          <input type='url' required id='image' ref={imageInputRef}></input>
         </div>
         <div className={classes.control}>
-          <label htmlFor="address">Meetup Address</label>
+          <label htmlFor='address'>Meetup Address</label>
           <input
-            type="text"
+            type='text'
             required
-            id="address"
-            ref={addressInputRef}
-          ></input>
+            id='address'
+            ref={addressInputRef}></input>
         </div>
         <div className={classes.control}>
-          <label htmlFor="description">Meetup Description</label>
+          <label htmlFor='description'>Meetup Description</label>
           <textarea
             rows={5}
             required
-            id="description"
-            ref={descriptionInputRef}
-          ></textarea>
+            id='description'
+            ref={descriptionInputRef}></textarea>
         </div>
         <div className={classes.actions}>
           <button>Add Meetup</button>
