@@ -9,6 +9,9 @@ const MainNavigation = (props) => {
   return (
     <header className={classes.header}>
       <div className={classes.logo}>React Meetups</div>
+      <form action='https://www.lucasbecker.dev/'>
+        <input type='submit' value='Go Back to LucasBecker.dev' />
+      </form>
       <ul>
         <li>
           <Link to='/'>All Meetups</Link>
